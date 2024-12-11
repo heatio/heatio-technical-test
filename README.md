@@ -1,5 +1,10 @@
 # Heatio technical interview
 
+# Dependencies
+- Node.js
+- npm
+- python (if running the python backend)
+
 # Task
  
 Create a simple web application that allows users to manage a to do list
@@ -15,11 +20,13 @@ Create a simple web application that allows users to manage a to do list
 
 ### Start the web application
 ```bash
+npm install
 npm run dev
 ```
 
-### Start the backend application
+### Start the node backend application
 ```bash
-npm run backend
+npm install
+npm run backend-node
 ```
 

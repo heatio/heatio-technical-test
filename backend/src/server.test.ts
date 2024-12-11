@@ -6,7 +6,7 @@ describe('Server Tests', () => {
     it('should respond with to-dos on GET /all-todos', async () => {
         const response = await request(app).get('/all-todos');
         expect(response.status).toBe(200);
-        expect(response.text).toBe(JSON.stringify(todos));
+        expect(response.text).toBe(todos);
     });
 
     // Additional tests can go here

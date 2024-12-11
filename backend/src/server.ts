@@ -1,5 +1,4 @@
-import express, { Request, Response } from 'express';
-import cors from 'cors';
+import express from 'express';
 
 export const app = express();
 const PORT = process.env.PORT || 3005;
@@ -9,7 +8,6 @@ const PORT = process.env.PORT || 3005;
  */
 
 app.use(express.json());
-app.use(cors());
 
 /**
  * Data
@@ -26,26 +24,18 @@ export const todos = [
  */
 
 // List of all the current to-do items
-app.get('/all-todos', (req: Request, res: Response) => {
+app.get('/all-todos', (req, res) => {
     res.send(todos);
 });
 
-// Add a to-do to the list
-app.post('/add-todo', (req: Request, res: Response) => {})
-
 // Mark to-do as complete or incomplete
-app.put('/update-todo', (req: Request, res: Response) => {})
-
-// Remove a to-do from the list
-app.post('/remove-todo', (req: Request, res: Response) => {})
-
+// ...
 
 /**
  * Server
  */
 
-if (process.env.NODE_ENV !== 'test') {
-    app.listen(PORT, () => {
-        console.log(`Server is running on http://localhost:${PORT}`);
-    });
-}
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
+
