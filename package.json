@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "backend-node": "cd ../backend && npm run dev && cd .."
+    "backend-node": "cd ./backend && npm run dev && cd .."
   },
   "dependencies": {
     "next": "15.1.0",
