@@ -10,6 +10,7 @@
     "backend-node": "cd ./backend && npm run dev && cd .."
   },
   "dependencies": {
+    "@types/cors": "^2.8.17",
     "next": "15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
